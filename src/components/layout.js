@@ -7,12 +7,14 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import Navigation from '../components/Navigation/Index'
 import "../assets/style.scss"
 
 const Layout = ({ children }) => {
   return (
     <>
       <div>
+        <Navigation />
         <main>{children}</main>
       </div>
     </>

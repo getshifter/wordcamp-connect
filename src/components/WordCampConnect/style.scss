@@ -1,75 +1,81 @@
 @import "~dc-pattern-lib/lib/assets/_variables.scss";
 
-$pink-light: #FFC0C0;
-
+$pink-light: #ffc0c0;
 
 .headeranimation {
-    color: $pink-light;
-    background-color: $pink;
-    min-width: 100vw;
-    min-height:60vh;
-
-
+  color: $pink-light;
+  background-color: $pink;
+  // min-width: 100vw;
+  // min-height: 50vh;
+  pointer-events: none;
 }
 
 .headeranimation__main {
-    height: 100%;
-    margin:0;
+  height: 100%;
+  margin: 0;
 }
 
 .headeranimation__main-downarrow {
-    animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-	40% {transform: translateY(-10px);}
-	60% {transform: translateY(-10px);}
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
 }
 
-
-
-.headeranimation__verybadfix {
-    position: absolute;
-    top:0;
-    right:0;
-    height:15rem;
-    width:100%;
-    margin:0;
-    background-color: $pink;
-    z-index:-1;
-}
+// .headeranimation__verybadfix {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   // height: 15rem;
+//   width: 100%;
+//   margin: 0;
+//   background-color: $pink;
+//   z-index: -1;
+// }
 
 .headeranimation__sidecontent-top {
-    position: relative;
-    top: 2rem;
+  position: relative;
+  top: 2rem;
 }
 
 .headeranimation__sidecontent-middle {
-    position: relative;
-    top: 15vh;
+  position: relative;
+  top: 15vh;
 }
 
 .headeranimation__sidecontent-middle-left {
-    margin-top:15vh;
+  margin-top: 15vh;
 }
 
 .headeranimation__sidecontent-bottom {
-    position: absolute;
-    bottom:0;
+  position: absolute;
+  bottom: 0;
 }
 
 .headeranimation__animation {
-    width:50%;
+  width: 50%;
 }
 
 // media queries
 
 @media only screen and (max-width: 1000px) {
-    .headeranimation__sidecontent {
-        display:none;
-    }
-    .headeranimation__animation {
-        width:80%;
-    }
+  .headeranimation__sidecontent {
+    display: none;
   }
+  .headeranimation__animation {
+    width: 80%;
+  }
+}
