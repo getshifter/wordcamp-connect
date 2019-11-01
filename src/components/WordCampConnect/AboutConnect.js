@@ -26,9 +26,7 @@ const AboutConnect = () => {
           <h1 className="mb-3">About WordCamp Connect</h1>
           <h4 className="mb-3">
             This year, our team at Shifter is attending both{" "}
-            <a href="https://2019.us.wordcamp.org" />
-            WordCamp US
-            <a /> and{" "}
+            <a href="https://2019.us.wordcamp.org">WordCamp US</a> and{" "}
             <a href="https://2019.tokyo.wordcamp.org/">WordCamp Tokyo</a>. It
             just so happens that both of these WordCamps are taking place on the
             same dates. We're taking the opportunity to create a nonstop
