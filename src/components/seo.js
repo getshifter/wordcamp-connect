@@ -62,6 +62,10 @@ function SEO({ description, lang, meta, title }) {
           content: site.siteMetadata.author,
         },
         {
+          name: `twitter:image`,
+          content: site.siteMetadata.image,
+        },
+        {
           name: `twitter:title`,
           content: title,
         },
@@ -78,7 +82,19 @@ function SEO({ description, lang, meta, title }) {
           content: site.siteMetadata.url
         },
         {
+          property: "og:image:height",
+          content: "825"
+        },
+        {
+          property: "og:image:width",
+          content: "500"
+        },
+        {
           property: "og:image",
+          content: site.siteMetadata.image
+        },
+        {
+          property: 'og:image:secure_url',
           content: site.siteMetadata.image
         }
       ].concat(meta)}
