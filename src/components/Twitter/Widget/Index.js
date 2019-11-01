@@ -47,6 +47,7 @@ const TwitterWidget = props => {
       tweets: allTwitterSearchTweetsTweets {
         edges {
           node {
+            id
             full_text
             favorite_count
             retweet_count
@@ -109,7 +110,7 @@ const TwitterWidget = props => {
             : randomPostCard.src
 
           return (
-            <Card className="mt-5">
+            <Card key={node.id} className="mt-5">
               <CardBody className="p-0">
                 <div className="tweet-postcard rounded shadow shadow-hover">
                   <div className="tweet-postcard__inner">
