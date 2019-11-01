@@ -8,7 +8,8 @@ module.exports = {
     description: `We're celebrating two global events this week by sponsoring WordCamp Tokyo and WordCamp US in St. Louis.`,
     author: `@getshifter`,
     twitterUsername: "@getshifter",
-    image: `${__dirname}/src/images/wcc-cards-05.jpg`,
+    image: `src/images/wcc-cards-05.jpg`,
+    url: 'https://www.getshifter.io'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

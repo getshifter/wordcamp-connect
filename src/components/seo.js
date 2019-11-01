@@ -74,6 +74,10 @@ function SEO({ description, lang, meta, title }) {
           content: "summary_large_image"
         },
         {
+          name: "og:url",
+          content: site.siteMetadata.url
+        },
+        {
           property: "og:image",
           content: site.siteMetadata.image
         }
