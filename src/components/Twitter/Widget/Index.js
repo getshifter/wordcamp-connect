@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import { Container, Row, Col, Card, CardBody } from "reactstrap"
+import { CardColumns, Card, CardBody } from "reactstrap"
 import "./style.scss"
 
 const TwitterWidget = props => {
@@ -83,8 +83,7 @@ const TwitterWidget = props => {
   `)
 
   return (
-    <Container>
-      <Row className="flex-column section-row">
+        <CardColumns>
         {tweets.map(({ node }) => {
           // PostCard Vars
           const postCard1 = data.postCard1.childImageSharp.fixed
@@ -110,7 +109,6 @@ const TwitterWidget = props => {
             : randomPostCard.src
 
           return (
-            <Col className="mb-gutter align-self-center">
             <Card className="mt-5">
               <CardBody className="p-0">
                 <div className="tweet-postcard rounded shadow shadow-hover">
@@ -146,11 +144,9 @@ const TwitterWidget = props => {
                 </div>
               </CardBody>
             </Card>
-            </Col>
           )
         })}
-      </Row>
-    </Container>
+        </CardColumns>
   )
 }
 

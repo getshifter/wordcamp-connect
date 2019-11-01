@@ -47,9 +47,7 @@ const ConnectTwitterFeed = () => {
 
   return (
     <Container>
-      <div class="card-columns ">
-        <TwitterWidget data={data} />
-      </div>
+      <TwitterWidget data={data} />
     </Container>
   )
 }

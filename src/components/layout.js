@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import Intercom from 'react-intercom';
 import Navigation from '../components/Navigation/Index'
 import "../assets/style.scss"
 
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
         <Navigation />
         <main>{children}</main>
       </div>
+      <Intercom appID="az33rewf" />
     </>
   )
 }
