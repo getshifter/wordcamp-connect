@@ -19,7 +19,7 @@ const AboutConnect = () => {
 
   const stampimage = data.stampimage.childImageSharp.fixed
   return (
-    <Container className="mb-5 section-row">
+    <Container className="section-row">
       <Row className="justify-content-center text-center">
         <Col sm="8">
           <Img fixed={stampimage} className="my-3" />
